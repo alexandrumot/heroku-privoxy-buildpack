@@ -21,7 +21,7 @@ APT_STATE_DIR="$CACHE_DIR/apt/state"
 mkdir -p "$APT_CACHE_DIR/archives/partial"
 mkdir -p "$APT_STATE_DIR/lists/partial"
 
-APT_OPTIONS="-o debug::nolocking=true -o Dir::Cache::Archives=$APT_CACHE_DIR -o Dir::State::Lists=$APT_STATE_DIR"
+APT_OPTIONS="-o Debug::NoLocking=true -o Dir::Cache::Archives=$APT_CACHE_DIR -o Dir::State::Lists=$APT_STATE_DIR"
 
 topic "Installing privoxy"
 
